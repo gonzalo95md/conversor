@@ -15,16 +15,21 @@ function convertir() {
 
   var valor = Number(texto);
 
-  if (modo.value === "cf") {
-    // Celsius a Fahrenheit: C x 9/5 + 32
-    var f = Math.round((valor * 9 / 5 + 32) * 100) / 100;
-    resultado.textContent = valor + " ºC = " + f + " ºF";
-  } else {
+  if (modo.value === "fc") {
     // Fahrenheit a Celsius: (F - 32) x 5/9
     var c = Math.round(((valor - 32) * 5 / 9) * 100) / 100;
     resultado.textContent = valor + " ºF = " + c + " ºC";
+  } else {
+    // Celsius a Fahrenheit: C x 9/5 + 32
+    var f = Math.round((valor * 9 / 5 + 32) * 100) / 100;
+    resultado.textContent = valor + " ºC = " + f + " ºF";
   }
 }
 
-// 3. Al hacer clic en el botón, se ejecuta la función.
+// 3. Se ejecuta al hacer clic en el botón.
 boton.addEventListener("click", convertir);
+
+// 4. Al cambiar el selector, se borra el resultado anterior.
+modo.addEventListener("change", function () {
+  resultado.textContent = "";
+});
