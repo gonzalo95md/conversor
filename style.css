@@ -1,0 +1,65 @@
+/* Estilo general de la página */
+body {
+  font-family: Arial, sans-serif;
+  background: #eef1f5;
+  color: #2b2f36;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* Tarjeta central */
+main {
+  background: #ffffff;
+  border: 1px solid #d5dae1;
+  border-top: 5px solid #1f4e79;
+  border-radius: 6px;
+  padding: 28px;
+  width: 100%;
+  max-width: 380px;
+}
+
+h1 {
+  color: #1f4e79;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #d5dae1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #1f4e79;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2f6fa7;
+}
+
+/* Texto del resultado */
+#resultado {
+  margin-top: 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1f4e79;
+}
