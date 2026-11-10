@@ -10,7 +10,13 @@
   <main>
     <h1>Conversor de temperatura</h1>
 
-    <label for="grados">Grados Celsius (ºC)</label>
+    <label for="modo">Conversión</label>
+    <select id="modo">
+      <option value="cf">De Celsius a Fahrenheit</option>
+      <option value="fc">De Fahrenheit a Celsius</option>
+    </select>
+
+    <label for="grados">Grados a convertir</label>
     <input type="number" id="grados" step="any" placeholder="Ej: 100">
 
     <button id="convertir">Convertir</button>
